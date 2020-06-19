@@ -1,10 +1,10 @@
 #include <util/delay.h>
 
 #include "aes.h"
-#include "eeprom.h"
 #include "lora.h"
 #include "radio.h"
-#include "spi.h"
+#include "../drivers/eeprom.h"
+#include "../drivers/spi.h"
 
 #pragma GCC diagnostic ignored "-Wchar-subscripts"
 

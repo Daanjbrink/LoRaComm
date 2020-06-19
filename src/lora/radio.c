@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdint.h>
 
-#include "debug.h"
+#include "../debug.h"
 #include "lora.h"
 #include "radio.h"
 

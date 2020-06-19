@@ -1,6 +1,6 @@
-#include "../Library/lcd.h"
-#include "../Library/lora.h"
-#include "../Library/spi.h"
+#include "drivers/lcd.h"
+#include "drivers/spi.h"
+#include "lora/lora.h"
 
 int main()
 {
