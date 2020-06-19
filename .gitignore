@@ -1,0 +1,4 @@
+Debug/*
+Release/*
+*.componentinfo.xml
+*.cproj
