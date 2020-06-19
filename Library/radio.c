@@ -6,7 +6,6 @@
 #include "debug.h"
 #include "lora.h"
 #include "radio.h"
-#include "serial.h"
 
 void radioSend(uint8_t *buffer, uint8_t length)
 {

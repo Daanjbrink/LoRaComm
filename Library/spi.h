@@ -5,7 +5,11 @@
 
 #include <stdint.h>
 
-#define GPS		PINC2
+#define LCDPORT		PORTB
+#define LORAPORT	PORTB
+#define SPIPORT		PORTB
+
+#define LCD		PINB1
 #define LORA	PINB2
 #define MOSI	PINB3
 #define MISO	PINB4

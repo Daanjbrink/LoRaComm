@@ -1,4 +1,4 @@
-#include <util/delay.h>
+/*#include <util/delay.h>
 
 #include <stdlib.h>
 #include <string.h>
@@ -78,4 +78,4 @@ void DEBUG_PRINT_BITS(uint8_t var)
 	serialWrite(tmp, sizeof(DEBUG_GSTATUS));
 
 	_delay_ms(100);
-}
+}*/

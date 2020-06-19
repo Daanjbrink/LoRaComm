@@ -11,14 +11,14 @@ void spiInit()
 
 void spiSelectChip(uint8_t port)
 {
-	if (port == LORA) { // Port must be one of the chip select pins
+	if (port == LCD || port == LORA) { // Port must be one of the chip select pins
 		PORTB &= ~(1<<port); // Set only that pin low
 	}
 }
 
 void spiUnselect()
 {
-	PORTB |= (1<<LORA);
+	PORTB |= (1<<LCD) | (1<<LORA);
 }
 
 inline uint8_t spiTransfer(uint8_t data)

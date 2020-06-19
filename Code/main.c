@@ -1,10 +1,15 @@
-#include <avr/io.h>
+#include "../Library/lcd.h"
+#include "../Library/lora.h"
+#include "../Library/spi.h"
 
-int main(void)
+int main()
 {
-    while (1) 
+	spiInit();
+	lcdInit();
+	loraInit();
+
+    while (1)
     {
 		
     }
 }
-
