@@ -8,7 +8,7 @@
 #define INST_CLEAR	0x0001
 #define INST_ENTMS	0x0006
 #define INST_HOMEC	0x0002
-#define INST_DISPE	0x000E // // Display is off, cursor is on, blinking is off
+#define INST_DISPE	0x000E // Display is off, cursor is on, blinking is off
 #define INST_BUSYF	0x0040
 #define INST_SETDR	0x0080
 

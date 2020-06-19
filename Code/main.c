@@ -8,8 +8,8 @@ int main()
 	lcdInit();
 	loraInit();
 
-    while (1)
-    {
+	while (1)
+	{
 		
-    }
+	}
 }
