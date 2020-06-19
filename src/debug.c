@@ -1,14 +1,13 @@
-/*#include <util/delay.h>
+#include <util/delay.h>
 
 #include <stdlib.h>
 #include <string.h>
 #include <stdint.h>
 
-#include "lora.h"
-#include "serial.h"
-#include "spi.h"
+#include "drivers/serial.h"
+#include "drivers/spi.h"
 
-// This is debug file, not all function will be used
+// This is a debug file, not all functions will be used
 #pragma GCC diagnostic ignored "-Wunused-function"
 #pragma GCC diagnostic ignored "-Wunused-parameter"
 
@@ -67,15 +66,15 @@ void DEBUG_PRINT_BITS(uint8_t var)
 	memcpy(tmp, DEBUG_GSTATUS, sizeof(DEBUG_GSTATUS));
 
 	replace_char(tmp, '!', (var & 128)  ? '1' : '0');
-	replace_char(tmp, '@', (var & 64)  ? '1' : '0');
-	replace_char(tmp, '#', (var & 32)  ? '1' : '0');
-	replace_char(tmp, '$', (var & 16)  ? '1' : '0');
-	replace_char(tmp, '%', (var & 8)  ? '1' : '0');
-	replace_char(tmp, '^', (var & 4)  ? '1' : '0');
-	replace_char(tmp, '&', (var & 2)  ? '1' : '0');
-	replace_char(tmp, '*', (var & 1)  ? '1' : '0');
+	replace_char(tmp, '@', (var & 64)	? '1' : '0');
+	replace_char(tmp, '#', (var & 32)	? '1' : '0');
+	replace_char(tmp, '$', (var & 16)	? '1' : '0');
+	replace_char(tmp, '%', (var & 8)	? '1' : '0');
+	replace_char(tmp, '^', (var & 4)	? '1' : '0');
+	replace_char(tmp, '&', (var & 2)	? '1' : '0');
+	replace_char(tmp, '*', (var & 1)	? '1' : '0');
 
 	serialWrite(tmp, sizeof(DEBUG_GSTATUS));
 
 	_delay_ms(100);
-}*/
+}
